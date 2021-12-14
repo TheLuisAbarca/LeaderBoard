@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}*/
+} */
 
 html {
   scroll-behavior: smooth;
@@ -21,13 +21,13 @@ footer {
 }
 
 .btn-primary {
-    background-color: transparent;
-    border-color: black;
-    color: black;
+  background-color: transparent;
+  border-color: black;
+  color: black;
 }
 
 .btn-primary:hover {
-    background-color: black;
-    border-color: black;
-    color: white;
+  background-color: black;
+  border-color: black;
+  color: white;
 }
