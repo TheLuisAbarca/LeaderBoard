@@ -1,0 +1,20 @@
+{
+  "name": "Template-HTML_CSS_JS",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <a href=\"https://www.microverse.org/\">     <img alt=\"Microverse\" src=\"https://img.shields.io/badge/-Microverse-blueviolet?style=plastic\">   </a>   <a href=\"https://github.com/TheLuisAbarca/:NameOfRepo:/LICENSE\">     <img alt=\"MIT Licensed\" src=\"https://img.shields.io/badge/license-MIT-green?style=plastic\">   </a>   <a href=\"https://github.com/TheLuisAbarca/:NameOfRepo:\">     <img alt=\"GitHub last commit (branch)\" src=\"https://img.shields.io/github/last-commit/TheLuisAbarca/:NameOfRepo:/:branch:?color=blue&style=plastic\">   </a>   <a href=\"https://github.com/TheLuisAbarca/:NameOfRepo:\">     <img alt=\"GitHub Repo stars\" src=\"https://img.shields.io/github/stars/TheLuisAbarca/:NameOfRepo:?color=orange&label=%E2%98%85%20stars%20&style=plastic\">   </a>   <a href=\"https://github.com/TheLuisAbarca\">     <img alt=\"GitHub followers\" src=\"https://img.shields.io/github/followers/TheLuisAbarca?color=yellow&logo=github&style=plastic\">   </a> </p> # Project Name",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheLuisAbarca/Template-HTML_CSS_JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheLuisAbarca/Template-HTML_CSS_JS/issues"
+  },
+  "homepage": "https://github.com/TheLuisAbarca/Template-HTML_CSS_JS#readme"
+}
