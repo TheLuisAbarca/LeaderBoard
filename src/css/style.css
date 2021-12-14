@@ -1,0 +1,33 @@
+/** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 10vh;
+}
+
+main {
+  height: 70vh;
+}
+
+footer {
+  height: 20vh;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border-color: black;
+  color: black;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
