@@ -31,7 +31,6 @@ function addNewScoreToLeaderBoard(event) {
     addNewScore(name, score).then(() => {
       nameField.value = '';
       scoreField.value = '';
-      populateBoard(insideBoard);
     });
   }
 }
