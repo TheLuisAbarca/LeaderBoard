@@ -15,15 +15,23 @@ const btnRefresh = document.getElementById('btn-refresh');
 const nameField = document.getElementById('name');
 const scoreField = document.getElementById('score');
 
+let msg = '';
+
 function addNewScoreToLeaderBoard(event) {
     event.preventDefault();
     let name = nameField.value;
     let score = scoreField.value;
-    addNewScore(name, score).then(() => {
-        nameField.value = '';
-        scoreField.value = '';
-        populateBoard(insideBoard);
-    });
+    if (nameField.value === '' || scoreField.value === '') {
+        msg = 'Please enter your name and score!'; //Todo: add message to the DOM
+    } else if (typeof Number((scoreField).value) !== 'number') {
+        msg = 'Please enter a valid score!'; //Todo: add message to the DOM
+    } else {
+        addNewScore(name, score).then(() => {
+            nameField.value = '';
+            scoreField.value = '';
+            populateBoard(insideBoard);
+        });
+    }
 }
 
 btnSubmit.addEventListener('click', (event) => addNewScoreToLeaderBoard(event));
