@@ -3,5 +3,32 @@ import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
 
+import { addNewScore } from './API';
+import { populateBoard } from './populateBoard';
+
 import '../css/bootstrap.min.css';
 import '../css/style.css';
+
+const insideBoard = document.getElementById('tbody-scores');
+const btnSubmit = document.getElementById('btn-submit');
+const btnRefresh = document.getElementById('btn-refresh');
+const nameField = document.getElementById('name');
+const scoreField = document.getElementById('score');
+
+function addNewScoreToLeaderBoard(event) {
+    event.preventDefault();
+    let name = nameField.value;
+    let score = scoreField.value;
+    addNewScore(name, score).then(() => {
+        nameField.value = '';
+        scoreField.value = '';
+        populateBoard(insideBoard);
+    });
+}
+
+btnSubmit.addEventListener('click', (event) => addNewScoreToLeaderBoard(event));
+btnRefresh.addEventListener('click', () => { populateBoard(insideBoard); });
+
+window.onload = () => {
+    populateBoard(insideBoard);
+}
