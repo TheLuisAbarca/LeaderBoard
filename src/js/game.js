@@ -21,8 +21,8 @@ class Game {
   }
 }
 
-function defyJSLinter() {
+const defyJSLinter = () => {
   console.log('Created in order to not only import one thing but also to not have a linter error.');
-}
+};
 
 export { Game, defyJSLinter };

@@ -1,6 +1,6 @@
 import { getLeaderBoard } from './API';
 
-function createElementBoard(leaderboardHTMLTag, scores) {
+const createElementBoard = (leaderboardHTMLTag, scores) => {
   leaderboardHTMLTag.innerHTML = '';
   scores.sort((a, b) => parseInt(b.score, 10) - parseInt(a.score, 10));
   scores.forEach((item) => {
@@ -19,12 +19,12 @@ function createElementBoard(leaderboardHTMLTag, scores) {
 
     leaderboardHTMLTag.appendChild(leaderboardItem);
   });
-}
+};
 
-function populateBoard(leaderboardHTMLTag) {
+const populateBoard = (leaderboardHTMLTag) => {
   getLeaderBoard().then((data) => {
     createElementBoard(leaderboardHTMLTag, data);
   });
-}
+};
 
 export { createElementBoard, populateBoard };

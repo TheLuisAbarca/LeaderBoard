@@ -17,7 +17,7 @@ const scoreField = document.getElementById('score');
 
 let msg = '';
 
-function addNewScoreToLeaderBoard(event) {
+const addNewScoreToLeaderBoard = (event) => {
   event.preventDefault();
   const name = nameField.value;
   const score = scoreField.value;
@@ -33,7 +33,7 @@ function addNewScoreToLeaderBoard(event) {
       scoreField.value = '';
     });
   }
-}
+};
 
 btnSubmit.addEventListener('click', (event) => addNewScoreToLeaderBoard(event));
 btnRefresh.addEventListener('click', () => { populateBoard(insideBoard); });
