@@ -8,13 +8,87 @@
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 </head>
 <body class="container">
-  <header class="row pt-2 justify-content-center align-items-center">
-    <div class="col-12 d-flex justify-content-start align-items-center">
+  <header class="row pt-3 mb-2 mb-md-5 justify-content-center align-items-center">
+    <nav class="row pb-2 mb-3 border-bottom border-1 justify-content-center align-items-center">
+      <div class="col-2 d-flex justify-content-center align-items-center">
+        <i class="fas fa-trophy fa-3x"></i>
+      </div>
+      <div class="col-10 d-flex justify-content-center align-items-center shown-mobile">
+        <h1 id="title" class="row justify-content-center align-items-center border rounded border-1 bg-white">LeaderBoard</h1>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-center hidden-mobile">
+        <h3>Top 3 Scores</h3>
+      </div>
+      <div class="col-2 d-flex justify-content-start align-items-center hidden-mobile">
+        <i class="fas fa-arrow-right fa-3x"></i>
+      </div>
+      <div class="col-6 d-flex justify-content-center align-items-center hidden-mobile">
+        <div class="row w-100">
+          <i class="col-12 text-lg" style="min-width: 2.25rem">
+            <div class="fa-2x d-flex justify-content-center">
+              <span class="fa-layers fa-fw">
+                <i id="firstPositionIcon" class="fas fa-trophy"></i>
+                <span class="fa-layers-text" data-fa-transform="shrink-8 up-3" style="font-weight:900">1</span>
+              </span>
+            </div>
+            <div id="firstPosition" class="d-flex justify-content-center">
+              Alguien
+            </div>
+          </i>
+        </div>
+        <div class="row w-100">
+          <i class="col-6 text-lg" style="min-width: 2.25rem">
+            <div class="fa-2x d-flex justify-content-center">
+              <span class="fa-layers fa-fw">
+                <i id="secondPositionIcon" class="fas fa-trophy"></i>
+                <span class="fa-layers-text" data-fa-transform="shrink-8 up-3" style="font-weight:900">2</span>
+              </span>
+            </div>
+            <div id="secondPosition" class="d-flex justify-content-center">
+              Alguien
+            </div>
+          </i>
+          <i class="col-6 text-lg" style="min-width: 2.25rem">
+            <div class="fa-2x d-flex justify-content-center">
+              <span class="fa-layers fa-fw">
+                <i id="thirdPositionIcon" class="fas fa-trophy"></i>
+                <span class="fa-layers-text" data-fa-transform="shrink-8 up-3" style="font-weight:900">3</span>
+              </span>
+            </div>
+            <div id="thirdPosition" class="d-flex justify-content-center">
+              Alguien
+            </div>
+          </i>
+        </div>
+      </div>  
+    </nav>
+    <div class="col-12 mb-md-4 d-md-flex justify-content-md-start align-items-md-center hidden-mobile">
       <h1 id="title" class="row justify-content-center align-items-center">Leaderboard App</h1>
     </div>
   </header>
-  <main class="row mt-4">
-    <section class="col-6">
+  <main class="row pt-4 ">
+    <!--section>
+      <i class="text-pink text-lg" style="min-width: 2.25rem">
+        <div class="fa-3x d-flex justify-content-center">
+          <span class="fa-layers fa-fw">
+            <i class="fas fa-square"></i>
+            <i class="fas fa-broadcast-tower" data-fa-transform="shrink-2 up-7"></i>
+            <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8" style="font-weight:900">IoT</span>
+          </span>
+        </div>
+      </i>
+    </section-->
+    <!--section>
+      <i class="text-lg" style="min-width: 2.25rem">
+        <div class="fa-2x d-flex justify-content-center">
+          <span class="fa-layers fa-fw">
+            <i class="fas fa-trophy" style="color: #ffc107;"></i>
+            <span class="fa-layers-text" data-fa-transform="shrink-8 up-3" style="font-weight:900">1</span>
+          </span>
+        </div>
+      </i>
+    </section-->
+    <section class="col-12 col-md-6">
       <div class="row justify-content-center align-items-center mb-4">
           <div class="col-9">
             <h2 class="row justify-content-center align-items-center">Recent Scores</h2>
@@ -23,16 +97,16 @@
             <button id="btn-refresh" class="btn btn-primary">Refresh</button>
           </div>
       </div>
-      <div class="row justify-content-center align-items-center">
+      <div id="table-container" class="row justify-content-center align-items-center">
         <div class="col-12 d-flex justify-content-center align-items-center">
           <table class="table table-striped table-bordered">
-            <tbody id="tbody-scores">
+            <tbody id="tbody-scores" class="h-100">
             </tbody>
           </table>
         </div>
       </div>
     </section>
-    <section class="col-6">
+    <section class="col-12 col-md-6">
       <div class="row justify-content-center align-items-center mb-4">
         <div class="col-12 d-flex justify-content-center align-items-center">
           <h2 class="row justify-content-center align-items-center">Add your score</h2>
@@ -55,7 +129,7 @@
       </div>
     </section>
   </main>
-  <footer class="d-flex flex-column justify-content-center align-items-center p-3">
+  <footer class="border-top border-1 d-flex flex-column justify-content-center align-items-center">
     <span class="font-weight-bold">Copyright &copy; 2021</span>
     <span class="font-weight-bold">Luis Anghelo Abarca Villacis</span>
   </footer>

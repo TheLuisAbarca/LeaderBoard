@@ -25,6 +25,16 @@ const passOptions = (objOption) => {
 
 const getLeaderBoard = () => getData(`${MyURL}`);
 
+const getTopThreeScores = () => {
+  const response = getData(`${MyURL}`, { method: 'GET' })
+    .then((data) => {
+      const topThreeScores = data.sort((a, b) => b.score - a.score).slice(0, 3);
+      return topThreeScores;
+    })
+    .catch((error) => console.log(error));
+  return response;
+};
+
 const addNewScore = (user, score) => {
   game.user = user;
   game.score = parseInt(score, 10);
@@ -33,4 +43,4 @@ const addNewScore = (user, score) => {
   return response;
 };
 
-export { getLeaderBoard, addNewScore };
+export { getLeaderBoard, addNewScore, getTopThreeScores };
