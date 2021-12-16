@@ -54,21 +54,21 @@ table {
   font-weight: 900;
 }
 
-#table-container{
+#table-container {
   max-height: 320px;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-#firstPositionIcon{
+#firstPositionIcon {
   color: #ffc107;
 }
 
-#secondPositionIcon{
+#secondPositionIcon {
   color: #c0c0c0;
 }
 
-#thirdPositionIcon{
+#thirdPositionIcon {
   color: #b87333;
 }
 
@@ -82,11 +82,11 @@ table {
   header {
     height: 10vh;
   }
-  
+
   main {
     height: 70vh;
   }
-  
+
   footer {
     height: 20vh;
   }
@@ -95,8 +95,7 @@ table {
     display: none !important;
   }
 
-  #table-container{
+  #table-container {
     max-height: 520px;
   }
-
 }
