@@ -38,7 +38,7 @@ const createElementBoard = (leaderboardHTMLTag, scores) => {
         icon.style.color = 'grey';
         numberPosition = 'down-3';
       }
-      // icon.style.fontSize = '24px';
+      
       const spanPosition = `<span class="fa-layers-text" data-fa-transform="shrink-8 ${numberPosition}" style="font-weight:900; color=black">${position}</span>`;
       thirdSpanElement.appendChild(icon);
       thirdSpanElement.innerHTML += spanPosition;
