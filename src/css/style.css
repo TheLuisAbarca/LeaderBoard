@@ -4,6 +4,10 @@
   box-sizing: border-box;
 } */
 
+body {
+  background-image: url('../img/whiteDesign.webp');
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,15 +17,19 @@ header {
 }
 
 main {
-  height: 70vh;
+  height: 80vh;
 }
 
 footer {
-  height: 20vh;
+  height: 10vh;
+}
+
+table {
+  background-color: white;
 }
 
 .btn-primary {
-  background-color: transparent;
+  background-color: whitesmoke;
   border-color: black;
   color: black;
 }
@@ -30,4 +38,64 @@ footer {
   background-color: black;
   border-color: black;
   color: white;
+}
+
+.btn-primary:focus {
+  background-color: grey;
+  border-color: black;
+  color: white;
+}
+
+.icon-trophy {
+  min-width: 2.25rem;
+}
+
+.numberPosition {
+  font-weight: 900;
+}
+
+#table-container {
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#firstPositionIcon {
+  color: #ffc107;
+}
+
+#secondPositionIcon {
+  color: #c0c0c0;
+}
+
+#thirdPositionIcon {
+  color: #b87333;
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 10vh;
+  }
+
+  main {
+    height: 70vh;
+  }
+
+  footer {
+    height: 20vh;
+  }
+
+  .shown-mobile {
+    display: none !important;
+  }
+
+  #table-container {
+    max-height: 520px;
+  }
 }
